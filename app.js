@@ -1,6 +1,5 @@
 var albumOneBtn = document.getElementById('album-one-btn');
 var albumTwoBtn = document.getElementById('album-two-btn');
-var scoreboard = document.getElementById('scoreboard');
 var albumOneScoreDisplay = document.getElementById('album-one-score');
 var albumTwoScoreDisplay = document.getElementById('album-two-score');
 
