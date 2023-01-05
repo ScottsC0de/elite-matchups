@@ -1,2 +1,4 @@
 # dookie
-elite album matchups. head to head artists and a jeopardy style winner stays on. Data taken from the Spotify Web API
+elite album matchups
+
+<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" alt="github mascot with daft punk helmet on" width="200"/>
