@@ -1,8 +1,8 @@
 var albumOneBtn = document.getElementById('album-one-btn');
 var albumTwoBtn = document.getElementById('album-two-btn');
 var scoreboard = document.getElementById('scoreboard');
-var albumOneScore = document.getElementById('album-one-score');
-var albumTwoScore = document.getElementById('album-two-score');
+var albumOneScoreDisplay = document.getElementById('album-one-score');
+var albumTwoScoreDisplay = document.getElementById('album-two-score');
 
 let albumOneScore = 0;
 let albumTwoScore = 0;
@@ -30,10 +30,14 @@ albumOneBtn.addEventListener('click', function (e) {
     e.preventDefault();
     vote();
     scoreOne();
+
+    console.log('test');
 });
 
 albumTwoBtn.addEventListener('click', function (e) {
     e.preventDefault();
     vote();
     scoreTwo();
+
+    console.log('test');
 });
