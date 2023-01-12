@@ -43,10 +43,12 @@ btnTwo.addEventListener('click', function (e) {
     console.log('test');
 });
 
+// put route
 const updateLiveScore = () => {
 
 };
 
+// get route
 const displayLiveScore = () => {
 
 };

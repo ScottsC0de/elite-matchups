@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// res.send html file
+// res.send html file 
 // app.get('/') servin html
 // app.get('/') post score
 // app.put('/score') update score
