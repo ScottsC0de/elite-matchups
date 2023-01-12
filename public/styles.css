@@ -25,7 +25,6 @@ h1 {
 
 button {
     height: 150px;
-    font-size: 21px;
     color: maroon;
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -39,6 +38,14 @@ button:hover {
     background-color: white;
 }
 
+#header-one {
+    margin-bottom: 20px;
+}
+
+#header-two {
+    margin-bottom: 20px;
+}
+
 .header-styles {
     font-size: 100px;
 }
@@ -47,13 +54,5 @@ button:hover {
     width: 100px;
     height: 100px;
     border: solid 2px maroon;
-    font-size: 69px;
-}
-
-#versus {
-    font-size: 50px;
-}
-
-#emoji {
     font-size: 69px;
 }
