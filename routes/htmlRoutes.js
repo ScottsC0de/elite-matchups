@@ -1,3 +1,5 @@
+// res.send html file - app.get('/') servin html
+
 // import and initiate express.js by storing it in an "app" variable
 const express = require('express')
 const app = express();

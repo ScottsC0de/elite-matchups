@@ -6,14 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// serve static 'public' folder
 app.use(express.static('public'));
-
-// res.send html file 
-// app.get('/') servin html
-
-// app.get('/') show score
-// app.put('/score') update score
 
 // route files we woykin with
 const matchupRoutes = require('./routes/matchupRoutes');

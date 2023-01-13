@@ -23,19 +23,25 @@ h1 {
     font-size: 75px;
 }
 
-button {
-    height: 150px;
-    color: maroon;
-    background-color: Transparent;
-    background-repeat: no-repeat;
+.score-styles {
+    width: 100px;
+    height: 100px;
+    font-size: 69px;
+    background-color: rgb(182, 156, 8);
     cursor: pointer;
-    overflow: hidden;
-    border: none;
     border-radius: 10px;
+    border: none;
 }
 
 button:hover {
-    background-color: white;
+    background-color: maroon;
+}
+
+button:focus {
+    background-color: maroon;
+    width: 100px;
+    height: 100px;
+    border: 2px solid maroon;
 }
 
 #header-one {
@@ -48,11 +54,4 @@ button:hover {
 
 .header-styles {
     font-size: 100px;
-}
-
-.score-styles {
-    width: 100px;
-    height: 100px;
-    border: solid 2px maroon;
-    font-size: 69px;
 }

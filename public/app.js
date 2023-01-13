@@ -43,17 +43,27 @@ btnTwo.addEventListener('click', function (e) {
     console.log('test');
 });
 
-// put route
-const updateLiveScore = () => {
-
-};
-
 // get route
 const displayLiveScore = () => {
+    fetch('/score', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+};
 
+// put or post route
+const updateLiveScore = () => {
+    fetch('/score', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(note),
+    });
 };
 
 document.addEventListener('load', function (e) {
     displayLiveScore();
 });
-
