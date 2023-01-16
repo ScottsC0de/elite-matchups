@@ -6,6 +6,27 @@ var scoreTwo = document.getElementById('score-two');
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
 
+// get route
+const displayLiveScore = () => {
+    fetch('/score', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+};
+
+// put or post route
+const updateLiveScore = () => {
+    fetch('/score', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(),
+    });
+};
+
 // 1 vote max
 const vote = () => {
     btnOne.disabled = true;
@@ -42,27 +63,6 @@ btnTwo.addEventListener('click', function (e) {
 
     console.log('test');
 });
-
-// get route
-const displayLiveScore = () => {
-    fetch('/score', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
-};
-
-// put or post route
-const updateLiveScore = () => {
-    fetch('/score', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(note),
-    });
-};
 
 document.addEventListener('load', function (e) {
     displayLiveScore();
