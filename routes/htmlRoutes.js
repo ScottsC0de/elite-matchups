@@ -8,7 +8,7 @@ const app = express();
 const path = require('path');
 
 // get() initial matchup page
-app.get('/score', (req, res) =>
+app.get('/', (req, res) =>
     res.sendFile(path.join(__dirname, '../public/matchup.html'))
 );
 

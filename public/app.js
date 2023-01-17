@@ -8,22 +8,38 @@ let scoreboardTwo = 0;
 
 // get route
 const displayLiveScore = () => {
-    fetch('/score', {
+    fetch('/matchup/score', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-        },
-    });
+        }
+    })
+        .then(res => res.json())
+        .then(response => {
+
+            console.log(response)
+            const { data } = response;
+
+            scoreOne.textContent = data.scoreOne;
+            scoreTwo.textContent = data.scoreTwo;
+
+            scoreboardOne = data.scoreOne;
+            scoreboardTwo = data.scoreTwo;
+        });
 };
 
+// save id to local storage
+
 // put or post route
-const updateLiveScore = () => {
-    fetch('/score', {
+const updateLiveScore = (score) => {
+    fetch('/matchup/score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(),
+        body: JSON.stringify({
+            score // shorthand set a key called score with value set to variable score
+        }),
     });
 };
 
@@ -50,7 +66,7 @@ btnOne.addEventListener('click', function (e) {
     e.preventDefault();
     vote();
     scoreOneFunction();
-    updateLiveScore();
+    updateLiveScore('scoreOne');
 
     console.log('test');
 });
@@ -59,11 +75,11 @@ btnTwo.addEventListener('click', function (e) {
     e.preventDefault();
     vote();
     scoreTwoFunction();
-    updateLiveScore();
+    updateLiveScore('scoreTwo');
 
     console.log('test');
 });
 
-document.addEventListener('load', function (e) {
+window.addEventListener('load', function (e) {
     displayLiveScore();
 });

@@ -6,10 +6,10 @@
 // import and initiate express.js by storing it in an "app" variable
 const express = require('express')
 const app = express();
-// const uuid = require('uuid');
+const uuid = require('uuid');
 
 // import db file
-const data = require('db.json');
+const data = require('../db.json');
 
 // import file system and file paths
 const fs = require('fs');
@@ -22,10 +22,11 @@ app.get('/score', (req, res) => {
 
 // post() method - add 1 to either score
 app.post('/score', (req, res) => {
-    req.body.id = uuid.v4();
-    data.push(req.body);
-    res.json(data);
-    fs.writeFile(path.join(__dirname, 'db.json'), JSON.stringify(data), (err) =>
+    const voteId = uuid.v4();
+    const score = req.body.score;
+    data[score]++;
+    res.json({ data, voteId }); // send back on object property for data and id created
+    fs.writeFile(path.join(__dirname, '../db.json'), JSON.stringify(data), (err) =>
         err ? console.log(err) : console.log('score is live'));
 });
 
