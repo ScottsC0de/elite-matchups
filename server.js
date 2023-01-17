@@ -18,4 +18,4 @@ app.use('/matchup', matchupRoutes);
 const PORT = process.env.PORT || 3001;
 
 // a message to show it has worked successfully
-app.listen(PORT, () => console.log(`I hears you at port ${PORT} 💩`));
+app.listen(PORT, () => console.log(`I hear you at port ${PORT} 💩`));

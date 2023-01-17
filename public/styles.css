@@ -23,6 +23,10 @@ h1 {
     font-size: 75px;
 }
 
+ul {
+    list-style: none;
+}
+
 .score-styles {
     width: 100px;
     height: 100px;

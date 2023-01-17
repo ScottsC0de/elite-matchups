@@ -15,10 +15,11 @@ const displayLiveScore = () => {
         }
     })
         .then(res => res.json())
-        .then(response => {
+        .then(data => { // or response
 
-            console.log(response)
-            const { data } = response;
+            console.log(data)
+            // console.log(response)
+            // const { data } = response;
 
             scoreOne.textContent = data.scoreOne;
             scoreTwo.textContent = data.scoreTwo;
@@ -28,7 +29,8 @@ const displayLiveScore = () => {
         });
 };
 
-// save id to local storage
+// set vote to local storage then if statement to see if user voted, disable buttons
+// clear local storage to vote again
 
 // put or post route
 const updateLiveScore = (score) => {
