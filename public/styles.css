@@ -9,6 +9,7 @@ body {
     margin: 0;
     background-color: rgb(182, 156, 8);
     color: maroon;
+    align-items: center;
 }
 
 header {
