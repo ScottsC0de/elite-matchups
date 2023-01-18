@@ -4,15 +4,11 @@
 }
 
 body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
     background-color: rgb(182, 156, 8);
     color: maroon;
 }
 
 header {
-    width: 100%;
     height: 150px;
     text-align: center;
     padding-top: 15px;
