@@ -24,6 +24,7 @@ ul {
 }
 
 .score-styles {
+    padding: 0;
     width: 100px;
     height: 100px;
     font-size: 69px;
@@ -33,7 +34,7 @@ ul {
     border: none;
 }
 
-/* button:hover {
+button:hover {
     background-color: maroon;
 }
 
@@ -42,7 +43,7 @@ button:focus {
     width: 100px;
     height: 100px;
     border: 2px solid maroon;
-} */
+}
 
 #header-one {
     margin-bottom: 20px;
