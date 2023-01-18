@@ -35,6 +35,7 @@ ul {
     cursor: pointer;
     border-radius: 10px;
     border: none;
+    align-items: center;
 }
 
 /* button:hover {
