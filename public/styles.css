@@ -9,7 +9,6 @@ body {
     margin: 0;
     background-color: rgb(182, 156, 8);
     color: maroon;
-    align-items: center;
 }
 
 header {
@@ -36,7 +35,6 @@ ul {
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    align-items: center;
 }
 
 /* button:hover {
