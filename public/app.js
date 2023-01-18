@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     scoreOneFunction();
     updateLiveScore('scoreOne');
 
-    localStorage.setItem('hey', 'scott;)');
+    localStorage.setItem('hey', 'scott');
 
     console.log('test');
 });
