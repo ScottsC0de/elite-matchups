@@ -2,6 +2,7 @@ var btnOne = document.getElementById('btn-one');
 var btnTwo = document.getElementById('btn-two');
 var scoreOne = document.getElementById('score-one');
 var scoreTwo = document.getElementById('score-two');
+var clearBtn = document.getElementById('clear-btn');
 
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
@@ -17,7 +18,7 @@ const displayLiveScore = () => {
         .then(res => res.json())
         .then(data => { // or response
 
-            console.log(data)
+            console.log(data);
             // console.log(response)
             // const { data } = response;
 
@@ -70,6 +71,8 @@ btnOne.addEventListener('click', function (e) {
     scoreOneFunction();
     updateLiveScore('scoreOne');
 
+    localStorage.setItem('hey', 'scott;)');
+
     console.log('test');
 });
 
@@ -79,9 +82,20 @@ btnTwo.addEventListener('click', function (e) {
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
 
+    localStorage.setItem('hey', 'scott');
+
     console.log('test');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
+
+    if (localStorage.getItem('hey', 'scott')) {
+        vote();
+    }
+
+});
+
+clearBtn.addEventListener("click", function (e) {
+    localStorage.clear();
 });

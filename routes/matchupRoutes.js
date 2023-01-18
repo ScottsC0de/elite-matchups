@@ -3,15 +3,12 @@
 
 // www.elite-matchups.sg.herokuapp.com/score
 
-// import and initiate express.js by storing it in an "app" variable
 const express = require('express')
 const app = express();
+
+const data = require('../db.json');
 const uuid = require('uuid');
 
-// import db file
-const data = require('../db.json');
-
-// import file system and file paths
 const fs = require('fs');
 const path = require('path');
 
