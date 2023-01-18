@@ -50,12 +50,18 @@ button:focus {
 
 #header-one {
     margin-bottom: 20px;
+    border: 3px solid maroon;
 }
 
 #header-two {
     margin-bottom: 20px;
+    border: 3px solid maroon;
 }
 
 .header-styles {
     font-size: 100px;
+}
+
+.score-styles {
+    border: 1px solid maroon;
 }
