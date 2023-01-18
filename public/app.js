@@ -30,9 +30,6 @@ const displayLiveScore = () => {
         });
 };
 
-// set vote to local storage then if statement to see if user voted, disable buttons
-// clear local storage to vote again
-
 // put or post route
 const updateLiveScore = (score) => {
     fetch('/matchup/score', {
@@ -71,9 +68,9 @@ btnOne.addEventListener('click', function (e) {
     scoreOneFunction();
     updateLiveScore('scoreOne');
 
-    localStorage.setItem('hey', 'scott');
+    localStorage.setItem('hello', 'world');
 
-    console.log('test');
+    // console.log('test');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -82,15 +79,15 @@ btnTwo.addEventListener('click', function (e) {
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
 
-    localStorage.setItem('hey', 'scott');
+    localStorage.setItem('hello', 'world');
 
-    console.log('test');
+    // console.log('test');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('hey', 'scott')) {
+    if (localStorage.getItem('hello', 'world')) {
         vote();
     }
 
