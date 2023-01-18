@@ -96,6 +96,6 @@ window.addEventListener('load', function (e) {
 
 });
 
-// clearBtn.addEventListener("click", function (e) {
-//     localStorage.clear();
-// });
+clearBtn.addEventListener("click", function (e) {
+    localStorage.clear();
+});
