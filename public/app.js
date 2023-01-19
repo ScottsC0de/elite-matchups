@@ -68,7 +68,7 @@ btnOne.addEventListener('click', function (e) {
     scoreOneFunction();
     updateLiveScore('scoreOne');
 
-    localStorage.setItem('hello', 'there');
+    localStorage.setItem('whats', 'up');
 
     // console.log('test');
 });
@@ -79,7 +79,7 @@ btnTwo.addEventListener('click', function (e) {
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
 
-    localStorage.setItem('hello', 'there');
+    localStorage.setItem('whats', 'up');
 
     // console.log('test');
 });
@@ -87,7 +87,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('hello', 'there')) {
+    if (localStorage.getItem('whats', 'up')) {
         vote();
     }
 
