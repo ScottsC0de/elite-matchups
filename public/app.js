@@ -7,7 +7,7 @@ var scoreTwo = document.getElementById('score-two');
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
 
-let canVote = true;
+var canVote = true;
 
 // get route
 const displayLiveScore = () => {
