@@ -2,10 +2,12 @@ var btnOne = document.getElementById('btn-one');
 var btnTwo = document.getElementById('btn-two');
 var scoreOne = document.getElementById('score-one');
 var scoreTwo = document.getElementById('score-two');
-var clearBtn = document.getElementById('clear-btn');
+// var clearBtn = document.getElementById('clear-btn');
 
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
+
+let canVote = true;
 
 // get route
 const displayLiveScore = () => {
@@ -44,7 +46,7 @@ const updateLiveScore = (score) => {
 };
 
 // 1 vote max
-const vote = () => {
+const voted = () => {
     btnOne.disabled = true;
     btnTwo.disabled = true;
 };
@@ -63,34 +65,31 @@ const scoreTwoFunction = () => {
 
 // onclick disable buttons, add 1 to score
 btnOne.addEventListener('click', function (e) {
-    e.preventDefault();
-    vote();
+    // e.preventDefault();
+    voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
 
-    localStorage.setItem('whats', 'up');
-
-    // console.log('test');
+    canVote = false;
+    // localStorage.setItem('whats', 'up');
 });
 
 btnTwo.addEventListener('click', function (e) {
-    e.preventDefault();
-    vote();
+    // e.preventDefault();
+    voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
 
-    localStorage.setItem('whats', 'up');
-
-    // console.log('test');
+    canVote = false;
+    // localStorage.setItem('whats', 'up');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
-
-    if (localStorage.getItem('whats', 'up')) {
-        vote();
+    clearStorage();
+    if (!canVote) {
+        voted();
     }
-
 });
 
 // clearBtn.addEventListener("click", function (e) {
