@@ -7,7 +7,7 @@ var scoreTwo = document.getElementById('score-two');
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
 
-var canVote = true;
+// var canVote = true;
 
 // get route
 const displayLiveScore = () => {
@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
 
     canVote = false;
-    // localStorage.setItem('whats', 'up');
+    localStorage.setItem('good', 'day');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -81,13 +81,13 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
 
     canVote = false;
-    // localStorage.setItem('whats', 'up');
+    localStorage.setItem('good', 'day');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
-    clearStorage();
-    if (!canVote) {
+    // clearStorage();
+    if (localStorage.getItem('good', 'day')) {
         voted();
     }
 });
