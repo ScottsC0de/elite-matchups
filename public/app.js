@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
 
     canVote = false;
-    localStorage.setItem('good', 'day');
+    localStorage.setItem('ice', 'cream');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -81,13 +81,13 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
 
     canVote = false;
-    localStorage.setItem('good', 'day');
+    localStorage.setItem('ice', 'cream');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
     // clearStorage();
-    if (localStorage.getItem('good', 'day')) {
+    if (localStorage.getItem('ice', 'cream')) {
         voted();
     }
 });
