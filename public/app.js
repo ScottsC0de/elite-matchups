@@ -96,4 +96,4 @@ window.addEventListener('load', function (e) {
 //     localStorage.clear();
 // });
 
-// reset score
+// reset now!
