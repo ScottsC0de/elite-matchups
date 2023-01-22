@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: lightsalmon;
+    background-color: sandybrown;
     color: black;
 }
 
@@ -33,7 +33,7 @@ li {
     width: 100px;
     height: 100px;
     font-size: 69px;
-    background-color: lightsalmon;
+    background-color: sandybrown;
     cursor: pointer;
     border-radius: 10px;
     border: none;
