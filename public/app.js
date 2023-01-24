@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
 
     canVote = false;
-    localStorage.setItem('fried', 'dumplings');
+    localStorage.setItem('peace', 'love');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -81,13 +81,13 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
 
     canVote = false;
-    localStorage.setItem('fried', 'dumplings');
+    localStorage.setItem('peace', 'love');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
     // clearStorage();
-    if (localStorage.getItem('fried', 'dumplings')) {
+    if (localStorage.getItem('peace', 'love')) {
         voted();
     }
 });
