@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
 
     canVote = false;
-    localStorage.setItem('stranger', 'thangs');
+    localStorage.setItem('cmon', 'bruh');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -81,13 +81,13 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
 
     canVote = false;
-    localStorage.setItem('stranger', 'thangs');
+    localStorage.setItem('cmon', 'bruh');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
     // clearStorage();
-    if (localStorage.getItem('stranger', 'thangs')) {
+    if (localStorage.getItem('cmon', 'bruh')) {
         voted();
     }
 });
