@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
 
     canVote = false;
-    localStorage.setItem('cmon', 'bruh');
+    localStorage.setItem('timmy', 'beers');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -81,13 +81,13 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
 
     canVote = false;
-    localStorage.setItem('cmon', 'bruh');
+    localStorage.setItem('timmy', 'beers');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
     // clearStorage();
-    if (localStorage.getItem('cmon', 'bruh')) {
+    if (localStorage.getItem('timmy', 'beers')) {
         voted();
     }
 });
