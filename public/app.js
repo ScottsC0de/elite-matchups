@@ -71,7 +71,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
 
     canVote = false;
-    localStorage.setItem('austin', 'lee');
+    localStorage.setItem('xbox', 'series');
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -81,13 +81,13 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
 
     canVote = false;
-    localStorage.setItem('austin', 'lee');
+    localStorage.setItem('xbox', 'series');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
     // clearStorage();
-    if (localStorage.getItem('austin', 'lee')) {
+    if (localStorage.getItem('xbox', 'series')) {
         voted();
     }
 });
