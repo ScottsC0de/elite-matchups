@@ -29,8 +29,8 @@ const displayLiveScore = () => {
 
             scoreOne.textContent = data.scoreOne;
             scoreTwo.textContent = data.scoreTwo;
-            scoreOne.textContent = data.scoreThree;
-            scoreTwo.textContent = data.scoreFour;
+            scoreThree.textContent = data.scoreThree;
+            scoreFour.textContent = data.scoreFour;
 
             scoreboardOne = data.scoreOne;
             scoreboardTwo = data.scoreTwo;
