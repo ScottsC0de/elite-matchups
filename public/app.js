@@ -1,13 +1,16 @@
 var btnOne = document.getElementById('btn-one');
 var btnTwo = document.getElementById('btn-two');
+var btnThree = document.getElementById('btn-three');
+var btnFour = document.getElementById('btn-four');
 var scoreOne = document.getElementById('score-one');
 var scoreTwo = document.getElementById('score-two');
-// var clearBtn = document.getElementById('clear-btn');
+var scoreThree = document.getElementById('score-three');
+var scoreFour = document.getElementById('score-four');
 
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
-
-// var canVote = true;
+let scoreboardThree = 0;
+let scoreboardFour = 0;
 
 // get route
 const displayLiveScore = () => {
@@ -26,9 +29,13 @@ const displayLiveScore = () => {
 
             scoreOne.textContent = data.scoreOne;
             scoreTwo.textContent = data.scoreTwo;
+            scoreOne.textContent = data.scoreThree;
+            scoreTwo.textContent = data.scoreFour;
 
             scoreboardOne = data.scoreOne;
             scoreboardTwo = data.scoreTwo;
+            scoreboardThree = data.scoreThree;
+            scoreboardFour = data.scoreFour;
         });
 };
 
@@ -49,6 +56,8 @@ const updateLiveScore = (score) => {
 const voted = () => {
     btnOne.disabled = true;
     btnTwo.disabled = true;
+    btnThree.disabled = true;
+    btnFour.disabled = true;
 };
 
 // add 1 score to content 1
@@ -63,38 +72,49 @@ const scoreTwoFunction = () => {
     scoreTwo.textContent = scoreboardTwo;
 };
 
+const scoreThreeFunction = () => {
+    scoreboardThree += 1;
+    scoreThree.textContent = scoreboardThree;
+};
+
+const scoreFourFunction = () => {
+    scoreboardFour += 1;
+    scoreFour.textContent = scoreboardFour;
+};
+
 // onclick disable buttons, add 1 to score
 btnOne.addEventListener('click', function (e) {
-    // e.preventDefault();
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-
-    canVote = false;
-    localStorage.setItem('xbox', 'series');
+    localStorage.setItem('pl', 'btl');
 });
 
 btnTwo.addEventListener('click', function (e) {
-    // e.preventDefault();
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
+    localStorage.setItem('pl', 'btl');
+});
 
-    canVote = false;
-    localStorage.setItem('xbox', 'series');
+btnThree.addEventListener('click', function (e) {
+    voted();
+    scoreThreeFunction();
+    updateLiveScore('scoreThree');
+    localStorage.setItem('pl', 'btl');
+});
+
+btnFour.addEventListener('click', function (e) {
+    voted();
+    scoreFourFunction();
+    updateLiveScore('scoreFour');
+    localStorage.setItem('pl', 'btl');
 });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
-    // clearStorage();
-    if (localStorage.getItem('xbox', 'series')) {
+
+    if (localStorage.getItem('pl', 'btl')) {
         voted();
     }
 });
-
-// clearBtn.addEventListener("click", function (e) {
-//     localStorage.clear();
-// });
-
-// reset now!
-// resettt

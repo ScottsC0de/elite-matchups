@@ -4,18 +4,18 @@
 }
 
 body {
-    background-color: goldenrod;
+    background-color: silver;
     color: black;
 }
 
 header {
     text-align: center;
     padding-top: 15px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 60px;
 }
 
 ul {
@@ -32,7 +32,7 @@ li {
     width: 100px;
     height: 100px;
     font-size: 69px;
-    background-color: goldenrod;
+    background-color: silver;
     cursor: pointer;
     border-radius: 10px;
     border: none;
@@ -49,6 +49,10 @@ button:focus {
     border: 2px solid black;
 }
 
+#names {
+    font-size: 2rem;
+}
+
 #header-one {
     margin-bottom: 20px;
     border: 3px solid black;
@@ -59,10 +63,26 @@ button:focus {
     border: 3px solid black;
 }
 
+#header-three {
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+#header-four {
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+#logo {
+    font-size: 75px;
+}
+
 .header-styles {
     font-size: 100px;
 }
 
-#past {
-    margin-top: 20px;
+.past {
+    padding: 10px;
+    margin-top: 5px;
+    border: 5px groove;
 }
