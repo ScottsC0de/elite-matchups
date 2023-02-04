@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('dicky', 'lou');
+    localStorage.setItem('myboy', 'drew');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('dicky', 'lou');
+    localStorage.setItem('myboy', 'drew');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('dicky', 'lou');
+//     localStorage.setItem('myboy', 'drew');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('dicky', 'lou');
+//     localStorage.setItem('myboy', 'drew');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('dicky', 'lou')) {
+    if (localStorage.getItem('myboy', 'drew')) {
         voted();
     }
 });
