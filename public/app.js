@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('johnny', 'lou');
+    localStorage.setItem('dicky', 'lou');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('johnny', 'lou');
+    localStorage.setItem('dicky', 'lou');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('johnny', 'lou');
+//     localStorage.setItem('dicky', 'lou');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('johnny', 'lou');
+//     localStorage.setItem('dicky', 'lou');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('johnny', 'lou')) {
+    if (localStorage.getItem('dicky', 'lou')) {
         voted();
     }
 });
