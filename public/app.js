@@ -1,16 +1,16 @@
 var btnOne = document.getElementById('btn-one');
 var btnTwo = document.getElementById('btn-two');
-var btnThree = document.getElementById('btn-three');
-var btnFour = document.getElementById('btn-four');
+// var btnThree = document.getElementById('btn-three');
+// var btnFour = document.getElementById('btn-four');
 var scoreOne = document.getElementById('score-one');
 var scoreTwo = document.getElementById('score-two');
-var scoreThree = document.getElementById('score-three');
-var scoreFour = document.getElementById('score-four');
+// var scoreThree = document.getElementById('score-three');
+// var scoreFour = document.getElementById('score-four');
 
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
-let scoreboardThree = 0;
-let scoreboardFour = 0;
+// let scoreboardThree = 0;
+// let scoreboardFour = 0;
 
 // get route
 const displayLiveScore = () => {
@@ -29,13 +29,13 @@ const displayLiveScore = () => {
 
             scoreOne.textContent = data.scoreOne;
             scoreTwo.textContent = data.scoreTwo;
-            scoreThree.textContent = data.scoreThree;
-            scoreFour.textContent = data.scoreFour;
+            // scoreThree.textContent = data.scoreThree;
+            // scoreFour.textContent = data.scoreFour;
 
             scoreboardOne = data.scoreOne;
             scoreboardTwo = data.scoreTwo;
-            scoreboardThree = data.scoreThree;
-            scoreboardFour = data.scoreFour;
+            // scoreboardThree = data.scoreThree;
+            // scoreboardFour = data.scoreFour;
         });
 };
 
@@ -56,8 +56,8 @@ const updateLiveScore = (score) => {
 const voted = () => {
     btnOne.disabled = true;
     btnTwo.disabled = true;
-    btnThree.disabled = true;
-    btnFour.disabled = true;
+    // btnThree.disabled = true;
+    // btnFour.disabled = true;
 };
 
 // add 1 score to content 1
@@ -72,49 +72,49 @@ const scoreTwoFunction = () => {
     scoreTwo.textContent = scoreboardTwo;
 };
 
-const scoreThreeFunction = () => {
-    scoreboardThree += 1;
-    scoreThree.textContent = scoreboardThree;
-};
+// const scoreThreeFunction = () => {
+//     scoreboardThree += 1;
+//     scoreThree.textContent = scoreboardThree;
+// };
 
-const scoreFourFunction = () => {
-    scoreboardFour += 1;
-    scoreFour.textContent = scoreboardFour;
-};
+// const scoreFourFunction = () => {
+//     scoreboardFour += 1;
+//     scoreFour.textContent = scoreboardFour;
+// };
 
 // onclick disable buttons, add 1 to score
 btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('sick', 'dude');
+    localStorage.setItem('johnny', 'lou');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('sick', 'dude');
+    localStorage.setItem('johnny', 'lou');
 });
 
-btnThree.addEventListener('click', function (e) {
-    voted();
-    scoreThreeFunction();
-    updateLiveScore('scoreThree');
-    localStorage.setItem('sick', 'dude');
-});
+// btnThree.addEventListener('click', function (e) {
+//     voted();
+//     scoreThreeFunction();
+//     updateLiveScore('scoreThree');
+//     localStorage.setItem('johnny', 'lou');
+// });
 
-btnFour.addEventListener('click', function (e) {
-    voted();
-    scoreFourFunction();
-    updateLiveScore('scoreFour');
-    localStorage.setItem('sick', 'dude');
-});
+// btnFour.addEventListener('click', function (e) {
+//     voted();
+//     scoreFourFunction();
+//     updateLiveScore('scoreFour');
+//     localStorage.setItem('johnny', 'lou');
+// });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('sick', 'dude')) {
+    if (localStorage.getItem('johnny', 'lou')) {
         voted();
     }
 });
