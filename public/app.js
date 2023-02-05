@@ -7,8 +7,8 @@ var scoreTwo = document.getElementById('score-two');
 // var scoreThree = document.getElementById('score-three');
 // var scoreFour = document.getElementById('score-four');
 
-let scoreboardOne = 4;
-let scoreboardTwo = 1;
+let scoreboardOne = 0;
+let scoreboardTwo = 0;
 // let scoreboardThree = 0;
 // let scoreboardFour = 0;
 
@@ -87,14 +87,14 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('myboy', 'drew');
+    localStorage.setItem('myboy2', 'drew2');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('myboy', 'drew');
+    localStorage.setItem('myboy2', 'drew2');
 });
 
 // btnThree.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('myboy', 'drew')) {
+    if (localStorage.getItem('myboy2', 'drew2')) {
         voted();
     }
 });
