@@ -7,8 +7,8 @@ var scoreTwo = document.getElementById('score-two');
 // var scoreThree = document.getElementById('score-three');
 // var scoreFour = document.getElementById('score-four');
 
-let scoreboardOne = 0;
-let scoreboardTwo = 0;
+let scoreboardOne = 4;
+let scoreboardTwo = 1;
 // let scoreboardThree = 0;
 // let scoreboardFour = 0;
 
