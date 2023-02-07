@@ -87,34 +87,36 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('please', 'votee');
+    localStorage.setItem('chicago', 'burrs');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('please', 'votee');
+    localStorage.setItem('chicago', 'burrs');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('please', 'votee');
+//     localStorage.setItem('chicago', 'burrs');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('please', 'votee');
+//     localStorage.setItem('chicago', 'burrs');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('please', 'votee')) {
+    if (localStorage.getItem('chicago', 'burrs')) {
         voted();
     }
 });
+
+// reminders. success message. final score notif.
