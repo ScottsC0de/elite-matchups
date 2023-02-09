@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('sean', 'kingston');
+    localStorage.setItem('malcolm', 'inthemiddle');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('sean', 'kingston');
+    localStorage.setItem('malcolm', 'inthemiddle');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('sean', 'kingston');
+//     localStorage.setItem('malcolm', 'inthemiddle');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('sean', 'kingston');
+//     localStorage.setItem('malcolm', 'inthemiddle');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('sean', 'kingston')) {
+    if (localStorage.getItem('malcolm', 'inthemiddle')) {
         voted();
     }
 });
