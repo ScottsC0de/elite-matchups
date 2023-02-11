@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('prompt', 'crown');
+    localStorage.setItem('poopflavored', 'icecream');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('prompt', 'crown');
+    localStorage.setItem('poopflavored', 'icecream');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('prompt', 'crown');
+//     localStorage.setItem('poop', 'icecream');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('prompt', 'crown');
+//     localStorage.setItem('poop', 'flavoredicecream');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('prompt', 'crown')) {
+    if (localStorage.getItem('poopflavored', 'icecream')) {
         voted();
     }
 });
