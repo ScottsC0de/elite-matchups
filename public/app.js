@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('migos', 'superbowl');
+    localStorage.setItem('mcdonaldss', 'chickennsalad');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('migos', 'superbowl');
+    localStorage.setItem('mcdonaldss', 'chickennsalad');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('poop', 'superbowl');
+//     localStorage.setItem('poop', 'chickennsalad');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('poop', 'flavoredsuperbowl');
+//     localStorage.setItem('poop', 'flavoredchickennsalad');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('migos', 'superbowl')) {
+    if (localStorage.getItem('mcdonaldss', 'chickennsalad')) {
         voted();
     }
 });
