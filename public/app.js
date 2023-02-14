@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('mcdonaldss', 'chickennsalad');
+    localStorage.setItem('kumorestauranthamden', 'onathursdayafternoon');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('mcdonaldss', 'chickennsalad');
+    localStorage.setItem('kumorestauranthamden', 'onathursdayafternoon');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('poop', 'chickennsalad');
+//     localStorage.setItem('poop', 'onathursdayafternoon');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('poop', 'flavoredchickennsalad');
+//     localStorage.setItem('poop', 'flavoredonathursdayafternoon');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('mcdonaldss', 'chickennsalad')) {
+    if (localStorage.getItem('kumorestauranthamden', 'onathursdayafternoon')) {
         voted();
     }
 });
