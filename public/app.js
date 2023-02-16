@@ -1,15 +1,15 @@
 var btnOne = document.getElementById('btn-one');
 var btnTwo = document.getElementById('btn-two');
-// var btnThree = document.getElementById('btn-three');
+var btnThree = document.getElementById('btn-three');
 // var btnFour = document.getElementById('btn-four');
 var scoreOne = document.getElementById('score-one');
 var scoreTwo = document.getElementById('score-two');
-// var scoreThree = document.getElementById('score-three');
+var scoreThree = document.getElementById('score-three');
 // var scoreFour = document.getElementById('score-four');
 
 let scoreboardOne = 0;
 let scoreboardTwo = 0;
-// let scoreboardThree = 0;
+let scoreboardThree = 0;
 // let scoreboardFour = 0;
 
 // get route
@@ -29,12 +29,12 @@ const displayLiveScore = () => {
 
             scoreOne.textContent = data.scoreOne;
             scoreTwo.textContent = data.scoreTwo;
-            // scoreThree.textContent = data.scoreThree;
+            scoreThree.textContent = data.scoreThree;
             // scoreFour.textContent = data.scoreFour;
 
             scoreboardOne = data.scoreOne;
             scoreboardTwo = data.scoreTwo;
-            // scoreboardThree = data.scoreThree;
+            scoreboardThree = data.scoreThree;
             // scoreboardFour = data.scoreFour;
         });
 };
@@ -56,7 +56,7 @@ const updateLiveScore = (score) => {
 const voted = () => {
     btnOne.disabled = true;
     btnTwo.disabled = true;
-    // btnThree.disabled = true;
+    btnThree.disabled = true;
     // btnFour.disabled = true;
 };
 
@@ -72,10 +72,10 @@ const scoreTwoFunction = () => {
     scoreTwo.textContent = scoreboardTwo;
 };
 
-// const scoreThreeFunction = () => {
-//     scoreboardThree += 1;
-//     scoreThree.textContent = scoreboardThree;
-// };
+const scoreThreeFunction = () => {
+    scoreboardThree += 1;
+    scoreThree.textContent = scoreboardThree;
+};
 
 // const scoreFourFunction = () => {
 //     scoreboardFour += 1;
@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('wheredowegooo', 'wheredowegoonoww');
+    localStorage.setItem('whattimearrewe', 'golffinngonsundat');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('wheredowegooo', 'wheredowegoonoww');
+    localStorage.setItem('whattimearrewe', 'golffinngonsundat');
 });
 
-// btnThree.addEventListener('click', function (e) {
-//     voted();
-//     scoreThreeFunction();
-//     updateLiveScore('scoreThree');
-//     localStorage.setItem('poop', 'wheredowegoonoww');
-// });
+btnThree.addEventListener('click', function (e) {
+    voted();
+    scoreThreeFunction();
+    updateLiveScore('scoreThree');
+    localStorage.setItem('whattimearrewe', 'golffinngonsundat');
+});
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('poop', 'flavoredwheredowegoonoww');
+//     localStorage.setItem('poop', 'flavoredgolffinngonsundat');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('wheredowegooo', 'wheredowegoonoww')) {
+    if (localStorage.getItem('whattimearrewe', 'golffinngonsundat')) {
         voted();
     }
 });
