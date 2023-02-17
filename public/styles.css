@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: yellowgreen;
+    background-color: sandybrown;
     color: black;
 }
 
@@ -32,7 +32,7 @@ li {
     width: 100px;
     height: 100px;
     font-size: 69px;
-    background-color: yellowgreen;
+    background-color: sandybrown;
     cursor: pointer;
     border-radius: 10px;
     border: none;
@@ -65,10 +65,10 @@ button:focus {
     border: 5px double;
 }
 
-#header-three {
+/* #header-three {
     margin-bottom: 20px;
     border: 5px double;
-}
+} */
 
 /* 
 #header-four {
