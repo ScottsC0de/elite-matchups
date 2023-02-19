@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('jaebdfvkjbadfkv', 'ierufhvbajsf');
+    localStorage.setItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('jaebdfvkjbadfkv', 'ierufhvbajsf');
+    localStorage.setItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('jaebdfvkjbadfkv', 'ierufhvbajsf');
+//     localStorage.setItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('poop', 'flavoredierufhvbajsf');
+//     localStorage.setItem('poop', 'flavoredrolfokjkhahabrbgtg');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('jaebdfvkjbadfkv', 'ierufhvbajsf')) {
+    if (localStorage.getItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg')) {
         voted();
     }
 });
