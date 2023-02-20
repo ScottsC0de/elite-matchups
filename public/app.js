@@ -87,34 +87,34 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg');
+    localStorage.setItem('songstufffff', 'tyvmm');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg');
-});
+    localStorage.setItem('songstufffff', 'tyvmm');
+}); s
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg');
+//     localStorage.setItem('songstufffff', 'tyvmm');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('poop', 'flavoredrolfokjkhahabrbgtg');
+//     localStorage.setItem('poop', 'flavoredtyvmm');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('hahalmaolmfaojk', 'rolfokjkhahabrbgtg')) {
+    if (localStorage.getItem('songstufffff', 'tyvmm')) {
         voted();
     }
 });
