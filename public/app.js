@@ -95,7 +95,7 @@ btnTwo.addEventListener('click', function (e) {
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
     localStorage.setItem('songstufffff', 'tyvmm');
-}); s
+});
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
