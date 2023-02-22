@@ -87,21 +87,21 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('howyadoinndra', 'keandjosh');
+    localStorage.setItem('wizkhalifsaandto', 'mandjerrry');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('howyadoinndra', 'keandjosh');
+    localStorage.setItem('wizkhalifsaandto', 'mandjerrry');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('howyadoinndra', 'keandjosh');
+//     localStorage.setItem('wizkhalifsaandto', 'mandjerrry');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('howyadoinndra', 'keandjosh')) {
+    if (localStorage.getItem('wizkhalifsaandto', 'mandjerrry')) {
         voted();
     }
 });
