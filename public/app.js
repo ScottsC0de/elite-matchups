@@ -87,21 +87,21 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('thecontinuumm', 'transsfunctionerr');
+    localStorage.setItem('dudeemannn', 'whereismyyyycar');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('thecontinuumm', 'transsfunctionerr');
+    localStorage.setItem('dudeemannn', 'whereismyyyycar');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('thecontinuumm', 'transsfunctionerr');
+//     localStorage.setItem('dudeemannn', 'whereismyyyycar');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('thecontinuumm', 'transsfunctionerr')) {
+    if (localStorage.getItem('dudeemannn', 'whereismyyyycar')) {
         voted();
     }
 });
