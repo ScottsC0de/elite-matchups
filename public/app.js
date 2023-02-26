@@ -87,21 +87,21 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('timmmmmyyy', 'jimmmmmmmmmmy');
+    localStorage.setItem('thenewyorkkyankeees', 'andtheneyorkmets');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('timmmmmyyy', 'jimmmmmmmmmmy');
+    localStorage.setItem('thenewyorkkyankeees', 'andtheneyorkmets');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('timmmmmyyy', 'jimmmmmmmmmmy');
+//     localStorage.setItem('thenewyorkkyankeees', 'andtheneyorkmets');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('timmmmmyyy', 'jimmmmmmmmmmy')) {
+    if (localStorage.getItem('thenewyorkkyankeees', 'andtheneyorkmets')) {
         voted();
     }
 });
