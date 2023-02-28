@@ -87,21 +87,21 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('doesanynonenha', 'veaphonecharrger');
+    localStorage.setItem('gamerrnerdssun', 'uniiiittebaby');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('doesanynonenha', 'veaphonecharrger');
+    localStorage.setItem('gamerrnerdssun', 'uniiiittebaby');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('doesanynonenha', 'veaphonecharrger');
+//     localStorage.setItem('gamerrnerdssun', 'uniiiittebaby');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('doesanynonenha', 'veaphonecharrger')) {
+    if (localStorage.getItem('gamerrnerdssun', 'uniiiittebaby')) {
         voted();
     }
 });
