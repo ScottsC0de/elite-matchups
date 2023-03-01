@@ -87,21 +87,21 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('gamerrnerdssun', 'uniiiittebaby');
+    localStorage.setItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('gamerrnerdssun', 'uniiiittebaby');
+    localStorage.setItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('gamerrnerdssun', 'uniiiittebaby');
+//     localStorage.setItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('gamerrnerdssun', 'uniiiittebaby')) {
+    if (localStorage.getItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob')) {
         voted();
     }
 });
