@@ -87,21 +87,21 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob');
+    localStorage.setItem('spideremansupermanhulk', 'batmanbatmanhulk');
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob');
+    localStorage.setItem('spideremansupermanhulk', 'batmanbatmanhulk');
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob');
+//     localStorage.setItem('spideremansupermanhulk', 'batmanbatmanhulk');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('paulringogeorgeringojohnpeteebest', 'mickkkkeithchuckwymanbrianrob')) {
+    if (localStorage.getItem('spideremansupermanhulk', 'batmanbatmanhulk')) {
         voted();
     }
 });
