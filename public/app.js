@@ -119,4 +119,4 @@ window.addEventListener('load', function (e) {
     }
 });
 
-// reminders. success message. final score notif.
+// reminders. success message. final score notif. reset
