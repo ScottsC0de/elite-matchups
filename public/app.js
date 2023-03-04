@@ -87,21 +87,25 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('drknjshrndtw', 'aeoouo');
+    localStorage.setItem('chicken', 'egg');
+
+    localStorage.clear();
 });
 
 btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('drknjshrndtw', 'aeoouo');
+    localStorage.setItem('chicken', 'egg');
+
+    localStorage.clear();
 });
 
 // btnThree.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('drknjshrndtw', 'aeoouo');
+//     localStorage.setItem('chicken', 'egg');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -114,7 +118,7 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('drknjshrndtw', 'aeoouo')) {
+    if (localStorage.getItem('chicken', 'egg')) {
         voted();
     }
 });
