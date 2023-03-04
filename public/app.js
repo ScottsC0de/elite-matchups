@@ -87,7 +87,7 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('chicken', 'egg');
+    // localStorage.setItem('chicken', 'egg');
 
     localStorage.clear();
 });
@@ -96,7 +96,7 @@ btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('chicken', 'egg');
+    // localStorage.setItem('chicken', 'egg');
 
     localStorage.clear();
 });
@@ -118,9 +118,9 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('chicken', 'egg')) {
-        voted();
-    }
+    // if (localStorage.getItem('chicken', 'egg')) {
+    //     // voted();
+    // }
 });
 
 // reminders. success message. final score notif. reset
