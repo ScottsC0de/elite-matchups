@@ -87,7 +87,7 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    // localStorage.setItem('chicken', 'egg');
+    localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
 
     localStorage.clear();
 });
@@ -96,7 +96,7 @@ btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    // localStorage.setItem('chicken', 'egg');
+    localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
 
     localStorage.clear();
 });
@@ -105,7 +105,7 @@ btnTwo.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('chicken', 'egg');
+//     localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
 // });
 
 // btnFour.addEventListener('click', function (e) {
@@ -118,9 +118,9 @@ btnTwo.addEventListener('click', function (e) {
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    // if (localStorage.getItem('chicken', 'egg')) {
-    //     // voted();
-    // }
+    if (localStorage.getItem('herokuappisback', 'hellooworldhowedoinn')) {
+        voted();
+    }
 });
 
 // reminders. success message. final score notif. reset
