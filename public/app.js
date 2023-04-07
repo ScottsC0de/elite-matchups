@@ -89,7 +89,7 @@ btnOne.addEventListener('click', function (e) {
     updateLiveScore('scoreOne');
     localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
 
-    localStorage.clear();
+    // localStorage.clear();
 });
 
 btnTwo.addEventListener('click', function (e) {
@@ -98,7 +98,7 @@ btnTwo.addEventListener('click', function (e) {
     updateLiveScore('scoreTwo');
     localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
 
-    localStorage.clear();
+    // localStorage.clear();
 });
 
 // btnThree.addEventListener('click', function (e) {
