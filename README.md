@@ -33,7 +33,7 @@ This website is a head to head matchup application created with HTML, CSS, JavaS
 - JavaScript
 - db.JSON
 ```
-> Links for these languages can be found <a href="#links-id">below</a>
+> Links for learning these languages can be found <a href="#links-id">below</a>
 
 <br>
 
