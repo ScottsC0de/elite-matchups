@@ -52,17 +52,29 @@ The author is a developer with a GitHub account: https://github.com/ScottsC0de &
 <br>
 Heroku link: https://elite-matchups.herokuapp.com<hr>
 GitHub project repo: https://github.com/ScottsC0de/dookie <hr>
-HTML: https://webpack.js.org/<hr>
-CSS: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API<hr>
-JavaScript: https://webpack.js.org/concepts/manifest/<hr>
-db.JSON: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+HTML: https://www.w3schools.com/html/default.asp<hr>
+CSS: https://www.w3schools.com/css/default.asp<hr>
+JavaScript: https://www.w3schools.com/js/default.asp<hr>
+db.JSON: https://www.npmjs.com/package/db-json<hr>
+Another great resource: https://www.freecodecamp.org
+
 
 <br>
 
 ## <a id="screenshots-id"></a>Screenshots
-![alt text](img/matchupimg.png)
-![alt text](img/bigvpac.png)
-![alt text](img/buldvcharvsquirt.png)
-![alt text](img/bohevsway.png)
-![alt text](img/drakevjosh2.png)
+![Beatles vs Rolling Stones](img/matchupimg.png)
+<br>
 
+![Biggie Smalls vs Tupac](img/bigvpac.png)
+<br>
+
+![Miley Cyrus vs Justin Bieber](img/mileyvsbiebs.png)
+<br>
+
+![Bulbasaur vs Charmander vs Squirtle](img/buldvcharvsquirt.png)
+<br>
+
+![Bohemian Rhapsody vs Stairway to Heaven](img/bohevsway.png)
+<br>
+
+![Drake Bell vs Josh Peck](img/drakevjosh2.png)
