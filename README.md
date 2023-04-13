@@ -21,7 +21,7 @@ Head to head matchup application powered by HTML, CSS, & JS
 <br>
 
 ## <a id="description-id"></a>Description
-This website is a head to head matchup application created with HTML, CSS, JavaScript, and a small JSON database. Once a matchup is set, users can vote by simply clicking the like button (or whatever emoji is set). Voters can only vote once per matchup. The votes are completely anonymous as well. Enjoy😎
+This website is a head to head matchup application created with HTML, CSS, JavaScript, and a small JSON database. Once a matchup is set, users can vote by simply clicking the like button (or whatever emoji is set). Voters can only vote once per matchup. Usually, it is a matchup between 2 things, but it has gone up to 4 (All 4 Beatles). Matchups **can** happen again. The votes are completely anonymous as well. Enjoy😎
 
 <br>
 
@@ -43,7 +43,7 @@ There are no installation steps required for this app😁
 <br>
 
 ## <a id="usage-id"></a>Usage
-Upon arriving to the site (https://elite-matchups.herokuapp.com), you will see a header with the current matchup in italicized writing. Scroll down further to see the current matchup, usually between two artists, albums, songs, or movies, but can be anything. Usually, it is a matchup between 2 things, but it has gone up to 4 (All 4 Beatles). Clicking the emoji under either option bumps their score up 1 point and you are not able to vote again (currently, you can on another browser). The score is then updated live and can be seen by any user on the application at any tinme. Usually, matchups are set daily by the creator, but they can go on for longer🤩
+Upon arriving to the site (https://elite-matchups.herokuapp.com), you will see a header with the current matchup in italicized writing. Scroll down further to see the current matchup, usually between two artists, albums, songs, or movies, but can be anything. Clicking the emoji under either option bumps their score up 1 point and you are not able to vote again (currently, you can on another browser). The score is then updated live and can be seen by any user on the application at any tinme. Usually, matchups are set daily by the creator, but they can go on for longer🤩
 
 <br>
 
