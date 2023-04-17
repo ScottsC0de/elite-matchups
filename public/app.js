@@ -87,7 +87,7 @@ btnOne.addEventListener('click', function (e) {
     voted();
     scoreOneFunction();
     updateLiveScore('scoreOne');
-    localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
+    localStorage.setItem('coffeevstea', 'whichonedoyoupreferrr');
 
     // localStorage.clear();
 });
