@@ -96,7 +96,7 @@ btnTwo.addEventListener('click', function (e) {
     voted();
     scoreTwoFunction();
     updateLiveScore('scoreTwo');
-    localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
+    localStorage.setItem('coffeevstea', 'whichonedoyoupreferrr');
 
     // localStorage.clear();
 });
@@ -105,20 +105,20 @@ btnTwo.addEventListener('click', function (e) {
 //     voted();
 //     scoreThreeFunction();
 //     updateLiveScore('scoreThree');
-//     localStorage.setItem('herokuappisback', 'hellooworldhowedoinn');
+//     localStorage.setItem('sure', 'yupokay');
 // });
 
 // btnFour.addEventListener('click', function (e) {
 //     voted();
 //     scoreFourFunction();
 //     updateLiveScore('scoreFour');
-//     localStorage.setItem('poop', 'flavoredtyvmm');
+//     localStorage.setItem('sure', 'yupokay');
 // });
 
 window.addEventListener('load', function (e) {
     displayLiveScore();
 
-    if (localStorage.getItem('herokuappisback', 'hellooworldhowedoinn')) {
+    if (localStorage.getItem('coffeevstea', 'whichonedoyoupreferrr')) {
         voted();
     }
 });
