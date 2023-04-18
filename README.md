@@ -1,4 +1,4 @@
-# dookie
+# Elite Matchups
 Head to head matchup application powered by HTML, CSS, & JS
 
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" alt="github mascot with daft punk helmet on" width="200"/>
